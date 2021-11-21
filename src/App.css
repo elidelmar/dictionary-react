@@ -12,3 +12,9 @@ h1 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body {
+  background-image: url("image1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
