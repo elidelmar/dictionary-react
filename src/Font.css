@@ -1,0 +1,23 @@
+.Font {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 390px;
+  width: 40ch;
+  animation: type 4s steps(40), blink 0.4s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "Fira Mono", monospace;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  60% {
+    border-color: transparent;
+  }
+}
