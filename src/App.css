@@ -1,7 +1,7 @@
 .App-footer {
   margin: 30px, 0;
   padding-top: 50px;
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
   font-family: monospace;
 }
@@ -22,4 +22,16 @@ body {
   background-image: url("image1.gif");
   background-repeat: no-repeat;
   background-size: cover;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: darkorchid;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
 }
