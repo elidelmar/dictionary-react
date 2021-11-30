@@ -10,7 +10,7 @@ export default function Dictionary() {
    let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setResults(response.data[0]);
   }
    function handlePexelsResponse(response) {
@@ -22,12 +22,12 @@ export default function Dictionary() {
 
     // documentation: https://dictionaryapi.dev/e
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
 
         let pexelsApiKey =
       "563492ad6f91700001000001a0c3a6465dbf43f99ed2ab08523490ba";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
+    let headers = {"Authorization" : `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
@@ -52,6 +52,7 @@ export default function Dictionary() {
       <button className="search-button">Search for Word</button>{' '}
       </form>
         <Results results={results} />
+        <span><Photos photos={photos} /></span>
     </div>
   );
 }

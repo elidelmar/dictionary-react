@@ -32,11 +32,12 @@
   display: block;
   max-width: 700px;
   border: solid;
+  padding-top: 10px;
   padding: 25px;
   border-radius: 30px;
   box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
   box-shadow: darkorchid 3px 2px 2px 2px;
    margin: 20px 0;
-   margin-right:auto;
+    margin-right:auto;
 margin-left:auto;
 }
