@@ -2,5 +2,5 @@ import React from "react";
 import "./Font.css";
 
 export default function Font() {
-  return <h2 className="Font">Hello, please type in a word to begin.</h2>;
+  return <h2 className="Font">Hello! Please type in an English word to begin.</h2>;
 }

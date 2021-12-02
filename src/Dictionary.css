@@ -26,6 +26,13 @@
   transition: all 0.2s ease-in-out;
 }
 
+.search-button:hover {
+  background-color: #33bbc5;
+  color: white;
+   cursor: pointer;
+}
+
+
 .Dictionary section {
   text-align: center;
   background: white;
@@ -41,4 +48,3 @@
   margin-right: auto;
   margin-left: auto;
 }
-

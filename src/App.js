@@ -16,8 +16,8 @@ function App() {
         <main>
           <Dictionary /> 
         </main>
-        <footer className="App-footer"><a href="https://github.com/elidelmar/dictionary-react"> <FontAwesomeIcon icon={faGithub} className="github"></FontAwesomeIcon> Openly Sourced Code </a> by Elisabeth Marquez
-        </footer>
+        <footer className="App-footer"><strong><a href="https://github.com/elidelmar/dictionary-react"> <FontAwesomeIcon icon={faGithub} className="github"></FontAwesomeIcon> Openly Sourced Code on Github </a> by Elisabeth Marquez
+        </strong></footer>
       </div>
     </div>
   );

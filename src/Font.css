@@ -1,10 +1,10 @@
 .Font {
   padding-top: 30px;
   padding-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 20px;
   font-size: 30px;
   width: 80ch;
-  animation: type 4s steps(35), blink 0.3s step-end infinite;
+  animation: type 4s steps(50), blink 0.3s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
