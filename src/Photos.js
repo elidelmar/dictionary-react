@@ -1,6 +1,6 @@
 import React from "react";
 import "./Photos.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function Photos(props) {
   if (props.photos) {
@@ -12,7 +12,7 @@ export default function Photos(props) {
               <div className="col-4" key={index}>
                 <a href={photo.src.original} target="_blank" rel="noreferrer">
                   <img
-                    src={photo.src.tiny}
+                    src={photo.src.landscape}
                     key={index}
                     className="img-fluid"
                     alt=""

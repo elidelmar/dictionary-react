@@ -6,8 +6,6 @@ import Emoji from "./Emoji";
 import Font from "./Font";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
-
 function App() {
   return (
     <div className="App">
