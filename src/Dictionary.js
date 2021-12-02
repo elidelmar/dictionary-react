@@ -7,7 +7,6 @@ import Photos from "./Photos";
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
-   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
 
   function handleDictionaryResponse(response) {
@@ -31,18 +30,8 @@ export default function Dictionary() {
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    search();
-  }
-
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
-  }
-
-   function load() {
-    setLoaded(true);
-    search();
   }
 
   return (
