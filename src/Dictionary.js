@@ -26,7 +26,7 @@ export default function Dictionary() {
 
         let pexelsApiKey =
       "563492ad6f91700001000001a0c3a6465dbf43f99ed2ab08523490ba";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
     let headers = {"Authorization" : `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
@@ -52,7 +52,7 @@ export default function Dictionary() {
       <button className="search-button">Search for Word</button>{' '}
       </form>
         <Results results={results} />
-        <span><Photos photos={photos} /></span>
+        <div className="picture"><Photos photos={photos} /></div>
     </div>
   );
 }
