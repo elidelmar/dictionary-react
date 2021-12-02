@@ -2,7 +2,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import './App.css';
 import Dictionary from "./Dictionary";
-import Emoji from "./Emoji";
 import Font from "./Font";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
